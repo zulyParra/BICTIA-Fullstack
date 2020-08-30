@@ -55,6 +55,21 @@ boton_restar.addEventListener("click", function() {
     let prueba;
     let a = parseFloat(numero_a.value);
     let b = parseFloat(numero_b.value);
+    if (isNaN(a)) {
+        mensaje_error1.innerHTML = "Debe ingresar un número";
+
+    } else {
+        mensaje_error1.innerHTML = " ";
+
+    }
+
+    if (isNaN(b)) {
+        mensaje_error2.innerHTML = "Debe ingresar un número";
+
+    } else {
+        mensaje_error2.innerHTML = " ";
+
+    }
     prueba = resta(a, b);
     resultado.innerHTML = prueba;
 });
@@ -63,6 +78,21 @@ boton_multiplicar.addEventListener("click", function() {
     let prueba;
     let a = parseFloat(numero_a.value);
     let b = parseFloat(numero_b.value);
+    if (isNaN(a)) {
+        mensaje_error1.innerHTML = "Debe ingresar un número";
+
+    } else {
+        mensaje_error1.innerHTML = " ";
+
+    }
+
+    if (isNaN(b)) {
+        mensaje_error2.innerHTML = "Debe ingresar un número";
+
+    } else {
+        mensaje_error2.innerHTML = " ";
+
+    }
     prueba = multiplicacion(a, b);
     resultado.innerHTML = prueba;
 });
@@ -71,6 +101,21 @@ boton_dividir.addEventListener("click", function() {
     let prueba;
     let a = parseFloat(numero_a.value);
     let b = parseFloat(numero_b.value);
+    if (isNaN(a)) {
+        mensaje_error1.innerHTML = "Debe ingresar un número";
+
+    } else {
+        mensaje_error1.innerHTML = " ";
+
+    }
+
+    if (isNaN(b)) {
+        mensaje_error2.innerHTML = "Debe ingresar un número";
+
+    } else {
+        mensaje_error2.innerHTML = " ";
+
+    }
     prueba = division(a, b);
     resultado.innerHTML = prueba;
 });
