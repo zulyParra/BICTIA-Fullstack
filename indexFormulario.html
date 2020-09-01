@@ -9,26 +9,28 @@
 </head>
 
 <body>
-    <span id="mensajeAlerta" class="mensaje-alerta" hidden></span>
-    <form class="formContact" action="#" onsubmit="validarFormulario(event)" novalidate>
-        <!-- <form class="formContact" action="#" id="form-contact" novalidate> -->
+
+    <form class="formContact" action="calculadora.html" onsubmit="return validar();">
+
+
         <h1 class="tittle-style">Formulario!!</h1>
+
         <div class="camposForm">
             <label class="label-style">Nombre</label>
-            <input class="input-style" type="text" minlength="6" name="nombre" id="nombre" autofocus>
-
+            <input class="input-style" type="text" name="nombre" id="name">
+            <span id="mensajeAlerta" class="mensaje-alerta" hidden></span>
         </div>
         <div class="camposForm">
             <label class="label-style">Apellidos</label>
-            <input class="input-style" type="text" minlength="6" name="apellido" id="apellido">
-
+            <input class="input-style" type="text" name="apellido" id="surname">
+            <span id="mensajeAlerta2" class="mensaje-alerta" hidden></span>
         </div>
         <div class="camposForm">
             <label class="label-style">Correo</label>
-            <input class="input-style" type="email" name="email" id="email" pattern="/^([\w\.\-_]+)?\w+@[\w-_]+(\.\w+){1,}$/">
-
+            <input class="input-style" type="email" name="email" id="email">
+            <span id="mensajeAlerta3" class="mensaje-alerta" hidden></span>
         </div>
-        <button class="button-style" onclick="" type="submit">Enviar</button>
+        <input class="button-style" type="submit" value="Enviar">
     </form>
 
 
