@@ -1,0 +1,28 @@
+.caja1 {
+    width: auto;
+    height: 100px;
+}
+
+.caja2 {
+    width: auto;
+    height: 350px;
+}
+
+.mi-clase-altura {
+    height: 100px;
+}
+
+.mi-clase-altura2 {
+    height: 300px;
+}
+
+.mi-clase-altura3 {
+    height: 250px;
+}
+
+.punto {
+    height: 30px;
+    width: 30px;
+    background: white;
+    border-radius: 50%;
+}
